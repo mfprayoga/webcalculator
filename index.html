@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>WebCalculator</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="flex-column-container card">
+            <div class="display">
+                <h1 id="displayNumber">0</h1>
+            </div>
+            <div class="flex-row-container">
+                <div class="button clear">CE</div>
+                <div class="button negative">+/-</div>
+                <div class="button operator">MOD</div>
+                <div class="button operator">*</div>
+            </div>
+            <div class="flex-row-container">
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button operator">/</div>
+            </div>
+            <div class="flex-row-container">
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button operator">+</div>
+            </div>
+            <div class="flex-row-container">
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button operator">-</div>
+            </div>
+            <div class="flex-row-container">
+                <div class="button dot">.</div>
+                <div class="button">0</div>
+                <div class="button equals double">=</div>
+<!--                <div class="button"></div>-->
+            </div>
+        </div>
+        <div class="storage card">
+            <h2>Riwayat Kalkulasi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Angka Pertama</th>
+                        <th>Operator</th>
+                        <th>Angka Kedua</th>
+                        <th>Hasil</th>
+                    </tr>
+                </thead>
+                <tbody id="storageList"></tbody>
+            </table>
+        </div>
+        <script src="script.js"></script>
+        <script src="storage.js"></script>
+    </body>
+</html>
